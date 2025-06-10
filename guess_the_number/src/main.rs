@@ -2,7 +2,7 @@
 
 use std::{cmp::Ordering, io, io::Write};
 // cmp::Ordering -> used for comparisions
-//std::io::Write -> used for flusing out the output (line 17, 18)
+// std::io::Write -> used for flusing out the output (line 18, 19)
 
 use rand::Rng;
 
@@ -10,16 +10,20 @@ fn main() {
     println!("Guess the Number!");
 
     let secret_number = rand::rng().random_range(1..=100);
-    // Generating a random number. (1..=100) symbolizes 100 is included. Had it been (1..100), 100 would've been excluded.
+    // Generating a random number. (x..=y) symbolizes y is included. Had it been (1..y), y would've been excluded.
     
     let mut count = 0;
 
     loop {
         print!("Enter your guess: ");
         io::stdout().flush().unwrap();
-        // println!() flushes the output and adds a newline automatically. print!() doesn't. So we had to manually flush the output. This won't add a newline.
+        /*
+        println!() flushes the output and adds a newline automatically. print!() doesn't.
+        So we had to manually flush the output.
+        This won't add a newline.
+        */
 
-        let mut guess = String::new(); // Note: guess here is a string.
+        let mut guess = String::new(); // "guess" here is a string.
 
         //Reading user input.
         io::stdin()
@@ -33,8 +37,6 @@ fn main() {
         };
 
         count += 1;
-
-        println!("You guessed: {guess}");
 
         // Comparision + display of number of tries user took.
         match guess.cmp(&secret_number) {
