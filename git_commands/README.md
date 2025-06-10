@@ -1,5 +1,5 @@
 # Git commands
-A set of commands typically used in Git. Placed them here for easy acces/navigation. Generated using DeepSeek. 🙂
+A set of commands typically used in Git. Placed them here for easy acces/navigation. 🙂
 
 ---
 
