@@ -30,7 +30,9 @@ A set of commands typically used in Git. Placed them here for easy acces/navigat
 | `git remote add origin <url>` | Link your local repo to a remote repository. |
 | `git push -u origin main` | First push (sets upstream tracking for `main`). |
 | `git push origin main` | Push commits to `main` (after the first push). |
+| `git push` | Push commits to current branch. |
 | `git pull origin main` | Fetch remote changes **and** merge them locally. |
+| `git pull` | Fetch remote changes from the current branch **and** merge them locally. |
 | `git fetch` | Check for remote changes **without** merging. |
 
 ---
