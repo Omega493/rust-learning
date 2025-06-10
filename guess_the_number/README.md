@@ -41,7 +41,6 @@ use rand::Rng;
    loop {
        print!("Enter your guess: ");
        io::stdout().flush().unwrap();
-    // --snip--
     }
    ```
    - Starts an infinite loop (broken when user guesses correctly)
