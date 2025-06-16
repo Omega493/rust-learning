@@ -11,14 +11,13 @@ x = 6; // Second assignment to x
 println!("The value of x is {x}");
 }
 ```
-- Since 'x' isn't a mutable variable, this would throw an error.
+- Since `x` isn't a mutable variable, this would throw an error.
 - However, `let mut x = 5` won't cause this issue.
 
 ## Constants
 - Constants are not only immutable by default, but also are always immutable (adding the `mut` keyword would do nothing.)
 - Can be declared in any scope, even global scope (outside of every function)
-- const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
-- Rust is able to evaluate a limited set of operations at compile. So rather than using 10800, we can use 60*60*3.
+- Consider `const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;`. Rust is able to evaluate a limited set of operations at compile. So rather than using 10800, we can use 60 * 60 * 3.
 - Constants are valid for the entire time a program runs, within the scope in which they were declared.
 
 ## Shadowing 
