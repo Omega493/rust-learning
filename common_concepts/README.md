@@ -14,16 +14,12 @@ println!("The value of x is {x}");
 - Since 'x' isn't a mutable variable, this would throw an error.
 - However, `let mut x = 5` won't cause this issue.
 
----
-
 ## Constants
 - Constants are not only immutable by default, but also are always immutable (adding the `mut` keyword would do nothing.)
 - Can be declared in any scope, even global scope (outside of every function)
 - const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
 - Rust is able to evaluate a limited set of operations at compile. So rather than using 10800, we can use 60*60*3.
 - Constants are valid for the entire time a program runs, within the scope in which they were declared.
-
----
 
 ## Shadowing 
 - We can declare a new variable using the name of an existing variable.  When this happens, the second variable is what the compiler will see when the variable name is used. The second variable overshadows the first, taking any further uses of the variable name onto itself until either it itself is shadowed, or the scope ends. See [main.rs](src/main.rs).
@@ -40,5 +36,3 @@ The first `spaces` variable is a string type and the second `spaces` variable is
 let mut spaces = "   ";
 spaces = spaces.len();
 ```
-
----
