@@ -28,9 +28,9 @@ println!("The value of x is {x}");
 ---
 
 ## Shadowing 
-- We can declare a new variable using the name of an existing variable.  When this happens, the second variable is what the compiler will see when the variable name is used. The second variable overshadows the first, taking any further uses of the variable name onto itself until either it itself is shadowed, or the scope ends. See [main.rs](common_concepts/src/main.rs).
+- We can declare a new variable using the name of an existing variable.  When this happens, the second variable is what the compiler will see when the variable name is used. The second variable overshadows the first, taking any further uses of the variable name onto itself until either it itself is shadowed, or the scope ends. See [main.rs](src/main.rs).
 - Shadowing is different from marking a variable as `mut` because we’ll get a compile-time error if we accidentally try to reassign to this variable without using the `let` keyword. By using `let`, we can perform a few transformations on a value but have the variable be immutable after those transformations have been completed.
-- The other difference between `mut` and shadowing is that because we’re effectively creating a new variable when we use the `let` keyword again, we can change the type of the value but reuse the same name. This has been demonstrated while creating the [Guess the Number game](guess_the_number\src\main.rs).
+- The other difference between `mut` and shadowing is that because we’re effectively creating a new variable when we use the `let` keyword again, we can change the type of the value but reuse the same name. This has been demonstrated while creating the [Guess the Number game](../guess_the_number/src/main.rs).
 - Another demonstration:
 Say our program asks a user to show how many spaces they want between some text by inputting space characters, and then we want to store that input as a number:
 ```rust
