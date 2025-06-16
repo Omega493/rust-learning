@@ -1,7 +1,5 @@
 # Rust Learning Notes
 
----
-
 ## Variables
 - Rust has exclusive specification of mutable variables
 - The following code will throw an error:-
