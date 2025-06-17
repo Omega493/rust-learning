@@ -1,5 +1,5 @@
 # Git commands
-A set of commands typically used in Git. Placed them here for easy acces/navigation. 🙂
+A set of commands typically used in Git. Placed them here for easy access/navigation. 🙂
 
 ---
 

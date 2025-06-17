@@ -35,3 +35,23 @@ The first `spaces` variable is a string type and the second `spaces` variable is
 let mut spaces = "   ";
 spaces = spaces.len();
 ```
+
+## Datatypes
+- Like other languages, every variable in Rust has some datatype. Rust is a statically typed language, which means that it must know the types of all variables at compile time. The compiler can usually infer what type we want to use based on the value and how we use it. In cases where many types are possible, we have to tell the compiler what datatype to use, as we saw in [Guess the Number game](../guess_the_number/src/main.rs).
+- Consider the following:-
+```rust
+let guess: u32 = "42".parse().expect("Not a number!");
+```
+If we don't add the `: u32` type annotation, Rust will display an error.
+### Scalar types
+A "scalar" type represents a single value. Rust has four primary scalar types - integer, floats, booleans and characters.
+#### Integers:-
+| Length | Singed | Unsigned |
+|--------|--------|----------|
+| 8-bit | i8 | u8 |
+| 16-bit | i16 | u16 |
+| 32-bit | i32 | u32 |
+| 64-bit | i64 | u64 |
+| 128-bit | i128 | u128 |
+| arch | isize | usize |
+- Signed variants can store numbers from -2<sup>n-1</sup> to 2<sup>n-1</sup>-1
