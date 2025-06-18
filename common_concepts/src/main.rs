@@ -10,7 +10,7 @@ fn main() {
 
     let tup = (493, 69.42, 'c');
     
-    let (i, j, k) = tup;
+    let (_i, j, _k) = tup; // "_i" and "_k" indicates unused variable.
     println!("The value of 'j' is {j}"); // Outputs 69.42
     
     let third_value = tup.2; // Index of third value in the tuple tup
