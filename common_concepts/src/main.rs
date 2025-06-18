@@ -7,4 +7,12 @@ fn main() {
     }
     // Scope of x = 12 ends here. x now has the value 6.
     println!("The value of x is {x}"); // Outputs 6.
+
+    let tup = (493, 69.42, 'c');
+    
+    let (i, j, k) = tup;
+    println!("The value of 'j' is {j}"); // Outputs 69.42
+    
+    let third_value = tup.2; // Index of third value in the tuple tup
+    println!("The third value is {third_value}"); // Outputs c
 }
