@@ -41,18 +41,6 @@ A set of commands typically used in Git. Placed them here for easy access/naviga
 - After that, **`git push`** suffices if you’re on `main`.  
 - **`git fetch`** checks for remote changes but doesn’t merge them (use `git pull` to fetch + merge).  
 
-## Example Workflow
-1. Make changes to `file.txt`.
-2. Stage and commit:
-   ```bash
-   git add file.txt
-   git commit -m "Update file.txt"
-   ```
-3. Push to remote:
-   ```bash
-   git push origin main
-   ```
-
 ## Some Other Important Commands
 - `git clone <url>` (download a remote repo).  
 - `git merge <branch>` (merge branches).
